@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Use the for loop to output even numbers from 2 to 10.</h1>
+
+        <section>
+
+        </section>
+        
+    </body>
+
+    <script>
+        const list = document.createElement('ul');              //create ul
+
+        for(let i=2; i<=10; i+=2){                              //loops that runs 2 to 10, increasing by 2 at each iteration
+            const listEntry = document.createElement('li');         //create list entry "li"
+            listEntry.textContent = i;                              //add even number to "li"
+            list.appendChild(listEntry);                            //add "li" to previously created "ul"
+        }
+        
+        const section = document.querySelector('section');      //select section element
+        section.appendChild(list);                              //add "ul" to selected section
+    </script>
+
+</html>
